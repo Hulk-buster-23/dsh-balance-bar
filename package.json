@@ -1,0 +1,45 @@
+{
+  "name": "dsh-balance-bar",
+  "version": "0.1.0",
+  "description": "DeepSeek balance fuel gauge for the DeepSeek Harness sidebar: a red bar, a 150 CNY default cap, and one click to the usage page.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "client-plugin",
+    "balance",
+    "usage"
+  ],
+  "author": "Hulk-buster-23",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hulk-buster-23/dsh-balance-bar.git"
+  },
+  "homepage": "https://github.com/Hulk-buster-23/dsh-balance-bar#readme",
+  "bugs": {
+    "url": "https://github.com/Hulk-buster-23/dsh-balance-bar/issues"
+  }
+}
